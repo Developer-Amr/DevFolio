@@ -1,0 +1,271 @@
+html{
+    scroll-behavior: smooth;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul .nav-item{
+    margin-right: 20px;
+    position: relative;
+    width: fit-content;
+}
+.navbar ul .nav-item::after{
+    content: "";
+    display: inline-block;
+    width: 0;
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    top: 40px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    transition: all 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%; 
+}
+.navbar .dropdown-menu li a:hover{
+    color: #0a58ca;
+    background-color: transparent;
+}
+/* end navbar */
+/* start home */
+#home{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-bg.jpg);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+#home h1{
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 86px;
+}
+/* end home */
+/* start about */
+#about .card-body h5{
+    position: relative;
+}
+#about .card-body h5::after{
+    content: "";
+    display: inline-block;
+    width: 21%;
+    background-color: #0078ff;
+    height: 3px;
+    position: absolute;
+    top: 70%;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+/* end about */
+/* start services */
+#services i{
+    width: 120px;
+    height: 120px;
+    border: 10px solid #0078ff;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+#services .card:hover i{
+    border-color: #cde1f8;
+    background-color: #0078ff;
+    color: white;
+}
+#services h3{
+    font-size: 48px;
+    position: relative;
+}
+#services h3::after{
+    content: "";
+    display: inline-block;
+    width: 2%;
+    background-color: #0078ff;
+    height: 5px;
+    position: absolute;
+    top: 175%;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* end services */
+/* start  statistics*/
+#statistics{
+    background-image: linear-gradient(rgba(0, 122, 255, 0.7), rgba(0, 122, 255, 0.7)), url(../images/counters-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#statistics i{
+    width: 75px;
+    height: 75px;
+    border: 10px solid #cde1f8;
+    border-radius: 50%;
+}
+/* end statistics */
+/* start work */
+#work h3{
+    font-size: 48px;
+    position: relative;
+}
+#work h3::after{
+    content: "";
+    display: inline-block;
+    width: 2%;
+    background-color: #0078ff;
+    height: 5px;
+    position: absolute;
+    top: 175%;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#work span{
+    color: #0078ff;
+}
+#work i{
+    color: #0078ff;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #0078ff;
+    border-radius: 50%;
+    padding-top: 20%;
+    padding-left: 20%;
+}
+#work img{
+    transition: all 0.5s;
+}
+#work img:hover{
+    transform: scale(1.2);
+}
+/* end work */
+/* start carousel */
+.carousel-item img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+#carousel{
+    background-image: linear-gradient(rgba(0, 122, 255, 0.7), rgba(0, 122, 255, 0.7)), url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* start carousel */
+/* end blog */
+#blog h3{
+    font-size: 48px;
+    position: relative;
+}
+#blog h3::after{
+    content: "";
+    display: inline-block;
+    width: 2%;
+    background-color: #0078ff;
+    height: 5px;
+    position: absolute;
+    top: 175%;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#blog .card-footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#blog .card-body a{
+    color: black;
+}
+#blog .card-body a:hover{
+    color: rgb(0, 122, 255);
+}
+#blog .card-footer a span:hover{
+    color: rgb(0, 122, 255);
+}
+#blog .badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#blog .img{
+    position: relative;
+}
+#blog .badge span{
+    background-color: rgb(0, 122, 255);
+    font-size: 11px;
+    height: 30px;
+    border-radius: 5px;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+/* end blog */
+/* start contact */
+#contact h5{
+    position: relative;
+}
+#contact h5::after{
+    content: "";
+    display: inline-block;
+    width: 21%;
+    background-color: #0078ff;
+    height: 3px;
+    position: absolute;
+    top: 82%;
+    bottom: 0px;
+    right: 0px;
+    left: 7px;
+}
+form button {
+    background-color: #0078ff;
+    margin: auto;
+    padding: 15px 25px;
+    color: white;
+    border: 1px solid #0078ff;
+    border-radius: 100vh;
+}
+.contact{
+    background-image: linear-gradient(rgba(0, 122, 255, 0.7), rgba(0, 122, 255, 0.7)), url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#contact .details i{
+    color: #0078ff;
+}
+#contact .icons i{
+    width: 40px;
+    height: 40px;
+    border: 3px solid #0078ff;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+#contact .icons i:hover{
+    border-color: #cde1f8;
+    background-color: #0078ff;
+    color: white;
+}
+/* end contact */
+/* start footer */
+footer{
+    background-color: #0062d3;
+}
